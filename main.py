@@ -30,7 +30,7 @@ async def reply(update: Update, context: ContextTypes.DEFAULT_TYPE):
         await context.bot.send_message(chat_id=user_id, text=f"💬 Ответ от администратора:\n\n{reply_text}")
         await update.message.reply_text("✅ Ответ отправлен пользователю.")
     except Exception as e:
-        await update.message.reply_text(f⚠️ Ошибка при отправке: {e}")
+        await update.message.reply_text(f"⚠️ Ошибка при отправке: {e}")
 
 # === Обработка входящих сообщений ===
 async def handle_message(update: Update, context: ContextTypes.DEFAULT_TYPE):
